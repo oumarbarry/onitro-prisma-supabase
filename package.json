@@ -6,19 +6,23 @@
     "build": "prisma generate && nitropack build",
     "preview": "node .output/server/index.mjs",
     "postinstall": "nitropack prepare",
+    "migrate:dev": "prisma migrate dev",
+    "migrate:deploy": "prisma migrate deploy",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@prisma/client": "^5.6.0",
+    "@prisma/client": "^5.7.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.0.0",
-    "@types/node": "^18.18.12",
-    "eslint": "^8.54.0",
-    "nitropack": "^2.8.0",
-    "prisma": "^5.6.0",
-    "typescript": "^5.3.2"
+    "@antfu/eslint-config": "^2.4.6",
+    "@types/node": "^18.19.3",
+    "eslint": "^8.56.0",
+    "nitropack": "^2.8.1",
+    "prisma": "^5.7.1",
+    "typescript": "^5.3.3"
   }
 }

@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
   const { title, description } = await readValidatedBody(event, insertMovieSchema.parse)
 
   try {
-    const movie = await prisma.movie.create({ data: { title, description } })
+    const movie = await db.movie.create({ data: { title, description } })
 
     setResponseStatus(event, 201, "Created successfully.")
 

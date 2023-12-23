@@ -6,8 +6,8 @@ export default defineNitroConfig({
   },
 
   imports: {
-    presets: [
-      { from: "zod", imports: ["z"] },
+    imports: [
+      { from: "zod", name: "z" },
     ],
   },
 })
