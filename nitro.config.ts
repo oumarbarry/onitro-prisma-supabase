@@ -1,5 +1,5 @@
 export default defineNitroConfig({
-  srcDir: "src",
+  srcDir: "server",
 
   routeRules: {
     "/api/**": { cors: true },

@@ -2,6 +2,7 @@
   "recommendations": [
     "antfu.file-nesting",
     "dbaeumer.vscode-eslint",
-    "EditorConfig.EditorConfig"
+    "EditorConfig.EditorConfig",
+    "Prisma.prisma"
   ]
 }
